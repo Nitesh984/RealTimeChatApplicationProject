@@ -1,4 +1,2 @@
 # RealTimeChatApplicationProject
-![](GIF1-min.gif)
-![](GIF2-min.gif)
-![](GIF3-min.gif)
+![frame1](https://user-images.githubusercontent.com/87926095/211182616-f95aaf0e-0d56-4ab4-930f-928cd9d68a50.gif)
