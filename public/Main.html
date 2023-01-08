@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealTime Comment System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="ChatBack">
+    <main>
+        <header>
+            <div class="header">
+                <img src="img/logo.jpeg" width="35px" class="imglogo">
+                <h3>ChatApp</h3>
+            </div>
+        <div class="left_Mode">
+            <div id="Mode">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk" id="lab">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="ball"></div>
+            </div>
+                </label>
+            <button  id="left_btn" >Leave Room</button>
+        </div>
+            <button type="button"><img src="img/Hemburger.png" width="50px" onclick="show_menu()"></button>
+        </header>
+        <div class="container">
+            <!-- user Live Area -->
+          <div class="column">
+            <div class="user" id="header_room">
+            <h4><i class="fa-solid fa-house" style="margin-right:5px;"></i>Room</h4>
+            </div>
+            <br>
+            <div class="user"><h4 id="user_header"><i class="fa-solid fa-users" style="margin-right:5px;"></i>User Live </h4></div>
+                <hr>
+                <ul class="userlist">
+                    
+                </ul> 
+          </div>
+
+          <!-- // Chat Area -->
+          <div class="column1">
+            <div class="row" id="Main">
+                <div class="col-md-12" id="chatArea">
+                    <ul class="comment_box">
+                        
+                    </ul>
+                    <div class="typing text-success"></div>
+                </div>
+            </div>
+            <!-- //typing area -->
+          <div class="row1">
+            <textarea id="textarea" rows="1" class="form-control" placeholder="Say Hii :)" required autocomplete="off" autofocus></textarea>
+             <button class="btn btn-primary float-end p-md-2 m-2" id="submit">Send</button>
+        </div>
+          </div>
+        </div>
+     </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        var menu=document.querySelector('.column');
+        function show_menu()
+        {
+            if(menu.style.display==="block")
+            {
+                menu.style.display="none";
+            }
+            else
+            {
+                menu.style.display="block";
+            }
+        }
+      </script>
+
+</body>
+</html>

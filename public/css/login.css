@@ -1,0 +1,84 @@
+	body,
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #d8c4c4 !important;
+    }
+    .user_card {
+        height: 400px;
+        width: 350px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: #61605e;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+
+    }
+    .brand_logo_container {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        top: -50px;
+        background: #0cff92;
+        padding: 10px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .brand_logo {
+        position: relative;
+        right: 27px;
+        bottom: 18px;
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        border: 2px solid rgb(36, 6, 6);
+    }
+    .form_container {
+        margin-top: 20px;
+    }
+    .login_btn {
+        width: 100%;
+        background: #ffedeb !important;
+        color: rgb(54, 16, 16) !important;
+        font-size: larger;
+        font-style: oblique;
+        font-weight: bolder;
+    }
+    .login_btn:focus {
+        box-shadow: none !important;
+        outline: 0px !important;
+    }
+    .login_container {
+        padding: 0 2rem;
+    }
+    .input-group-text {
+        background: #c0392b !important;
+        color: white !important;
+        border: 0 !important;
+        border-radius: 0.25rem 0 0 0.25rem !important;
+    }
+    .input_user,
+    .input_pass:focus {
+        box-shadow: none !important;
+        outline: 0px !important;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+        background-color: #c0392b !important;
+    }
+
+    .tagline
+    {
+        margin-top: 70px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color:rgb(247, 243, 239);
+    }

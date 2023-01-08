@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: hwb(0 100% 0%);
+    -wekit-font-smoothing:antialiased;
+    font-family: 'Muli',sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.comment
+{
+    animation: something .6s ease forwards;
+    display: flex;
+    height: inherit;
+
+}
+
+@keyframes something
+{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#Main
+{
+  height: 45vh;
+  max-height: 45vh;
+}
+
+
+main
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.container
+{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: rgb(255, 255, 255);
+  background-image: url('../img/darkMode.jpg');
+}
+
+.row
+{
+    display: flex;
+    text-align: center;
+}
+header{
+    color: white;
+    padding: 7px 20px;
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    background-color: rgb(35, 28, 41);
+ }
+
+.header
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header .imglogo
+{
+    width: 50px;
+    border-radius: 50%;
+}
+
+header .left_Mode 
+{
+    display: flex;
+    align-items: center;
+}
+header .left_Mode .left_btn
+{
+  float: left;
+}
+#Mode
+{
+    margin-right: 20px;
+}
+
+
+ 
+.header h3
+{
+font-size: 32px;
+margin-left: 10px;
+color: white;
+}
+
+header button
+{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+  border-radius: 10px;
+}
+
+.column
+{
+  width: 300px;
+  color: white;
+  background-color: darkgray;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(35, 28, 41);
+  border-right: 1px solid whitesmoke;
+  color: snow;
+}
+
+.column1
+{
+  padding: 15px;
+  width:100%;
+  border-radius: 10px;
+  margin-left: 10px;
+  color: white;
+  max-height: 65vh;
+  background-image: url(../img/darkWhatsappImg.webp);
+}
+
+ul
+{
+  padding-left: 0px;
+}
+
+.userlist
+{
+    max-height: 30vh;
+    overflow-y: scroll;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.userlist ::-webkit-scrollbar
+{
+    width: 8px;
+}
+.item
+{
+float: left;
+}
+.list
+{
+    display: flex;
+    margin: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    align-items: center;
+}
+.avatar
+{
+ width: 30px;
+ border-radius: 50%;
+ margin-right: 10px;
+ background-color: antiquewhite;
+}
+.userlist li
+{
+  list-style: none;
+}
+
+#room h3
+{
+  margin-bottom: 0px;
+}
+#room h1
+{
+    margin-top: 0px;
+}
+
+.row1
+{
+ display: flex;
+ flex-direction:  row;
+ justify-content: space-between;
+ align-items: stretch;
+ padding-top: 20px;
+ margin-bottom: 0px;
+ align-items: baseline;
+ margin-top: 10px;
+ height: 55px
+}
+
+#textarea
+{
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  position: sticky;
+  overflow-y: hidden;
+  text-size-adjust:inherit;
+}
+
+
+#submit
+{
+  border-radius: 10px;
+  padding: 5px;
+  position: sticky;
+  background-color: rgba(255, 157, 157, 0.611);
+  color: black;
+  display: block;
+}
+
+.card
+{
+    color: brown;
+    display: block;
+    border-radius:15px;
+    width: inherit;
+    padding: 0px;
+}
+.nameTime 
+{
+display: flex;
+margin: 0px;
+}
+.nameTime h6
+{
+    margin: 0px;
+}
+.Time
+{
+    float: right;
+    font-size:10px;
+    font-weight: lighter;
+}
+
+.card-body p
+{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ margin-bottom: 0px;
+ width: inherit;
+}
+.card-body
+{
+    text-align: left;
+    height: inherit;
+    max-height: 1300px;
+    padding-bottom: 10px;
+    width:inherit;
+}
+#chatArea
+{
+    height: 300px;
+    overflow-y: scroll;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin-left: 0px;
+    align-items:flex-start;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    /* width */
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    /* Track */
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Handle */
+    background: rgb(110, 110, 110);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* Handle on hover */
+    background: rgb(110, 110, 110);
+}
+
+::-webkit-scrollbar-track-piece {
+    /* not handle on */
+    background: rgb(1, 1, 1);
+}
+
+#left_btn  
+{
+    background-color: rgb(234, 237, 236);
+    border-radius: 10px;
+    display: block;
+    height: 40px;
+    padding: 10px;
+    margin-top: 4px;
+}
+
+#left_btn:hover
+{
+    background-color:rgba(255, 76, 11, 0.885);
+}
+
+hr
+{
+  margin:0px;
+}
+
+.Nameimg
+{
+    width: 40px;
+    border-radius: 50%;
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    background-color: antiquewhite;
+    margin-right: 4px;
+}
+
+#header_room
+{
+   color: white;
+}
+
+.Room_insert
+{
+  font-weight: bolder;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.left
+{
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  margin: 10px auto;
+  list-style: none;
+  padding: 4px 0px;
+  border-radius: 10px;
+  color: brown;
+  font-weight: bolder;
+}
+
+
+/* Dark-ligh Mode */
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: rgba(106, 100, 100, 0.894);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: rgb(70, 45, 45);
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: hsl(69, 100%, 50%);
+}
+
+
+
+
+
+/* this code will activate when width is smaller or equal to 900px */
+@media screen and (max-width:900px) {
+    main{
+      width: 90%;
+    }
+    header button{
+      display: block;
+    }
+    .container
+    {
+      position: relative;
+    }
+    .column
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 0 0 10px 10px;
+      height: max-content;
+      z-index: 11;
+      box-shadow: 0 15px 20px -20px black;
+      padding-bottom: 0px;
+      display: none;
+    }
+    .column1
+    {
+      width: 100%;
+    }
+    #left_btn
+    {
+        float: right;
+        margin-top: 4px;
+    }
+    #header_room h4
+    {
+        margin-left: 20px;
+    }
+  }
+
